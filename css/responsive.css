@@ -1,12 +1,20 @@
 /* phone css */
 @media (max-width: 575.98px) {
+    .jumbotron .container {
+        padding: 150px 0px 0px 50px;
+    }
+
+    .display-4 {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
     .lead {
         font-size: 20px;
-        width: 300px;
+        width: 80%;
     }
 
     .jumbotron .btn {
-        margin-left: 60px;
+        margin-left: 15%;
     }
 
     .section-title {
