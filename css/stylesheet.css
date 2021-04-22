@@ -1,5 +1,5 @@
 .jumbotron{
-    background-image: url('https://fadhlanhariz.github.io/portofolio/img/jumbotron.jpg');
+    background-image: url('../img/jumbotron.jpg');
     background-size: cover;
     height: 780px;
     color: white;
@@ -127,9 +127,9 @@ h3{
 .contact .form-floating{
     color: #212020;
     line-height: 1px;
-}
-.kiri .form-control{
     margin-bottom: 20px;
+}
+.kiri .form-control {
     height: 50px;
 }
 .kanan .form-control{
