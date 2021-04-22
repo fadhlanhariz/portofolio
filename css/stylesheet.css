@@ -135,6 +135,9 @@ h3{
 .kanan .form-control{
     height: 190px;
 }
+.contact button {
+    width: 100%;
+}
 /* end of contact */
 footer{
     background-color: black;
