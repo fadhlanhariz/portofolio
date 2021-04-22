@@ -1,0 +1,174 @@
+.jumbotron{
+    background-image: url(../img/Jumbotron.jpg);
+    background-size: cover;
+    height: 780px;
+    color: white;
+    position: relative;
+}
+.jumbotron::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(42, 42, 42, 1), rgba(42, 42, 42, 0.4));
+}
+.jumbotron .container{
+    position: relative;
+    z-index: 1;
+    padding: 217px 0px 0px 140px;
+}
+.display-4{
+    font-family: 'viga';
+    font-size: 50px;
+    text-shadow: 0px 5px 6px black;
+}
+.lead{
+    width: 460px;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 0px 3px 6px black;
+}
+.jumbotron .btn{
+    margin-left: 150px;
+    box-shadow: 3px 3px 6px white;
+}
+.jumbotron .btn:active{
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+.section-title{
+    font-family: 'viga';
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 30px 0px;
+}
+/* profile section */
+.profile{
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 250px;
+    background-color: #212020;
+    margin-bottom: -250px;
+}
+.bio img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: 10% 20%;
+    margin-bottom: 25px;
+}
+.bio span{
+    text-decoration: underline;
+}
+.bio p{
+    text-align: left;
+    margin: 0px 0px 10px 170px;
+    font-size: 25px;
+}
+.name{
+    font-weight: bold;
+}
+.jobs{
+    font-family: 'kalam', cursive;
+    letter-spacing: 5px;
+}
+.progress{
+    height: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;;
+}
+.about p{
+    text-align: justify;
+}
+h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.skill{
+    margin-bottom: 35px;
+}
+.profile .btn{
+    margin: 20px auto;
+}
+/* end of profile section */
+/* projects */
+.projects{
+    background-color: #ececec;
+    color: #212020;
+    padding-bottom: 250px;
+    margin-bottom: -250px;
+}
+.projects .heading{
+    margin-bottom: 35px;
+}
+.card{
+    border: none;
+    box-shadow: 0px 3px 6px rgba(42, 42, 42, 0.7);
+    border-radius: 5px;
+}
+.card img{
+    height: 300px;
+    object-fit: fill;
+}
+/* end of projects */
+/* contact */
+.contact{
+    background-color: #212020;
+    color: white;
+    padding-bottom: 50px;
+}
+.contact .form-floating{
+    color: #212020;
+    line-height: 1px;
+}
+.kiri .form-control{
+    margin-bottom: 20px;
+    height: 50px;
+}
+.kanan .form-control{
+    height: 190px;
+}
+/* end of contact */
+footer{
+    background-color: black;
+    width: 100%;
+    color: #ececec;
+    padding: 50px 0px;
+}
+footer p{
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    line-height: 1px;
+}
+footer h3{
+    margin-bottom: 30px;
+}
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
+footer a:hover{
+    color: darkgray;
+}
+.copyright{
+    text-align: center;
+    background-color: #212020;
+    color: #ececec;
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 15px;
+    letter-spacing: -1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.copyright p{
+    margin-bottom: 0px;
+}
