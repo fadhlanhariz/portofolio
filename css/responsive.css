@@ -27,13 +27,6 @@
         font-size: 17px;
         line-height: 30px;
     }
-
-    .bio p {
-        margin-left: 100px;
-        font-size: 20px;
-        letter-spacing: 2px;
-    }
-
     /* end of profile */
     /* projects */
     .card {
@@ -48,7 +41,7 @@
         padding-left: 50px;
     }
 
-    .contact .form-floating {
+    .contact .form {
         width: 80%;
     }
 
@@ -63,6 +56,39 @@
     }
 
     /* end of footer */
+}
+
+@media (max-width: 767.98px) {
+    .jumbotron .container {
+        padding: 170px 0px 0px 60px;
+    }
+
+    .display-4 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .bio p {
+        margin-left: 100px;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .profile h3 {
+        font-size: 15px;
+    }
+
+    .card {
+        width: 80%;
+        margin-left: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .card img {
+        object-fit: cover;
+        object-position: 10% 20%;
+        height: 450px;
+    }
 }
 
 /* responsive css for tablet and small device landscape */
