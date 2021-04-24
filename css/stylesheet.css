@@ -1,11 +1,11 @@
-.jumbotron{
+.jumbotron {
     background-image: url('../img/jumbotron.jpg');
     background-size: cover;
     height: 780px;
     color: white;
     position: relative;
 }
-.jumbotron::after{
+.jumbotron::after {
     content: '';
     display: block;
     position: absolute;
@@ -14,17 +14,17 @@
     height: 100%;
     background-image: linear-gradient(to top, rgba(42, 42, 42, 1), rgba(42, 42, 42, 0.4));
 }
-.jumbotron .container{
+.jumbotron .container {
     position: relative;
     z-index: 1;
     padding: 217px 0px 0px 140px;
 }
-.display-4{
+.display-4 {
     font-family: 'viga';
     font-size: 50px;
     text-shadow: 0px 5px 6px black;
 }
-.lead{
+.lead {
     width: 460px;
     font-family: sans-serif;
     font-size: 25px;
@@ -32,16 +32,16 @@
     text-align: center;
     text-shadow: 0px 3px 6px black;
 }
-.jumbotron .btn{
+.jumbotron .btn {
     margin-left: 150px;
     box-shadow: 3px 3px 6px white;
 }
-.jumbotron .btn:active{
+.jumbotron .btn:active {
     position: relative;
     top: 7px;
     box-shadow: none;
 }
-.section-title{
+.section-title {
     font-family: 'viga';
     font-size: 30px;
     letter-spacing: 5px;
@@ -49,84 +49,95 @@
     margin: 30px 0px;
 }
 /* profile section */
-.profile{
+.profile {
     color: white;
     padding-top: 40px;
     padding-bottom: 250px;
     background-color: #212020;
     margin-bottom: -250px;
 }
-.bio img{
+.bio img {
     height: 150px;
     width: 150px;
     object-fit: cover;
     object-position: 10% 20%;
     margin-bottom: 25px;
 }
-.bio span{
+.bio span {
     text-decoration: underline;
 }
-.bio p{
+.bio p {
     text-align: left;
     margin: 0px 0px 10px 170px;
     font-size: 25px;
 }
-.name{
+.name {
     font-weight: bold;
 }
-.jobs{
+.jobs {
     font-family: 'kalam', cursive;
     letter-spacing: 5px;
 }
-.progress{
+.progress {
     height: 25px;
     font-weight: bold;
     font-size: 15px;
-    margin-bottom: 5px;;
+    margin-bottom: 5px;
+    ;
 }
-.about p{
+.about p {
     text-align: justify;
 }
 .profile h3 {
     font-size: 20px;
     margin-bottom: 15px;
 }
-.skill{
+.skill {
     margin-bottom: 35px;
 }
-.profile .btn{
+.profile .btn {
     margin: 20px auto;
 }
 /* end of profile section */
 /* projects */
-.projects{
+.projects {
     background-color: #ececec;
     color: #212020;
     padding-bottom: 250px;
     margin-bottom: -250px;
 }
-.projects .heading{
+.projects .heading {
 
     margin-bottom: 35px;
 }
-.card{
+.card {
     border: none;
     box-shadow: 0px 3px 6px rgba(42, 42, 42, 0.7);
     border-radius: 5px;
 }
-.card img{
+.card img {
     height: 300px;
     object-fit: cover;
-    object-position: 10% 20%;
+    object-position: 0 0;
 }
-/* end of projects */
+.card-text a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.card-text a:hover {
+    color: darkgrey;
+}
+
+end of projects */
+
 /* contact */
-.contact{
+.contact {
     background-color: #212020;
     color: white;
     padding-bottom: 50px;
 }
-.contact .form-floating{
+.contact .form-floating {
     color: #212020;
     line-height: 1px;
     margin-bottom: 20px;
@@ -134,14 +145,14 @@
 .kiri .form-control {
     height: 50px;
 }
-.kanan .form-control{
+.kanan .form-control {
     height: 190px;
 }
 .contact button {
     width: 100%;
 }
 /* end of contact */
-footer{
+footer {
     background-color: black;
     width: 100%;
     color: #ececec;
@@ -154,16 +165,19 @@ footer h3 {
 footer a {
     margin-bottom: 20px;
     font-size: 15px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana,
+    Geneva,
+    Tahoma,
+    sans-serif;
     letter-spacing: 1px;
     line-height: 1px;
     text-decoration: none;
     color: inherit;
 }
-footer a:hover{
+footer a:hover {
     color: darkgray;
 }
-.copyright{
+.copyright {
     text-align: center;
     background-color: #212020;
     color: #ececec;
@@ -173,6 +187,6 @@ footer a:hover{
     letter-spacing: -1px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.copyright p{
+.copyright p {
     margin-bottom: 0px;
 }
