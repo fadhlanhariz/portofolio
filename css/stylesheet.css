@@ -121,16 +121,13 @@
     object-position: 0 0;
 }
 .card-text a {
-    text-decoration: inherit;
+    text-decoration: none;
     color: inherit;
 }
-
 .card-text a:hover {
     color: darkgrey;
 }
-
-end of projects */
-
+/* end of projects */
 /* contact */
 .contact {
     background-color: #212020;
@@ -165,7 +162,7 @@ footer h3 {
 footer a {
     margin-bottom: 20px;
     font-size: 15px;
-    font-family: Verdana,
+    font-family:Verdana,
     Geneva,
     Tahoma,
     sans-serif;
