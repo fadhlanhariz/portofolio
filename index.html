@@ -33,7 +33,8 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">I AM <br>WEBSITE DEVELOPER</h1>
-            <p class="lead">saya menyukai tantangan dan tertarik untuk belajar hal baru, saya memiliki tanggungjawab terhadap manajemen waktu yang tinggi dalam bekerja, saya mampu bekerja dengan team maupun individu.
+            <p class="lead">saya menyukai tantangan dan tertarik untuk belajar hal baru, saya memiliki tanggungjawab
+                terhadap manajemen waktu yang tinggi dalam bekerja, saya mampu bekerja dengan team maupun individu.
             </p>
             <a href="#profile" class="btn btn-danger">READ MORE</a>
         </div>
@@ -45,10 +46,18 @@
             <div class="row">
                 <div class="col-lg-6 about">
                     <h2 class="section-title">About Me</h2>
-                    <p>saya Hariz, saya penggemar teknologi informasi. saya memahami berbagai bahasa pemrograman terutama bahasa pemrograman website. sejak kuliah saya telah membuat 6 website teruntuk tugas kuliah maupun untuk keperluan komersil. saya mampu membuat website dengan atau tanpa framework. <br>
-                    saya menyukai tantangan dan tertarik untuk belajar hal baru, saya memiliki tanggungjawab terhadap manajemen waktu yang tinggi dalam bekerja, saya mampu bekerja dengan team maupun individu. <br>
-                    saya juga mengikuti berbagai workshop untuk meningkatkan skill saya di dunia pemrograman salah satunya workshop yang diadakan oleh kementrian komunikasi dan informasi melalui programnya yang bernama Digital Talent Schoolarship. <br>
-                    saya memilki beberapa prestasi atletik / non akademis di bidang beladiri atau lebih tepatnya brazilian jiu jitsu.</p>
+                    <p>saya Hariz, saya penggemar teknologi informasi. saya memahami berbagai bahasa pemrograman
+                        terutama bahasa pemrograman website. sejak kuliah saya telah membuat 6 website teruntuk tugas
+                        kuliah maupun untuk keperluan komersil. saya mampu membuat website dengan atau tanpa framework.
+                        <br>
+                        saya menyukai tantangan dan tertarik untuk belajar hal baru, saya memiliki tanggungjawab
+                        terhadap manajemen waktu yang tinggi dalam bekerja, saya mampu bekerja dengan team maupun
+                        individu. <br>
+                        saya juga mengikuti berbagai workshop untuk meningkatkan skill saya di dunia pemrograman salah
+                        satunya workshop yang diadakan oleh kementrian komunikasi dan informasi melalui programnya yang
+                        bernama Digital Talent Schoolarship. <br>
+                        saya memilki beberapa prestasi atletik / non akademis di bidang beladiri atau lebih tepatnya
+                        brazilian jiu jitsu.</p>
                 </div>
                 <div class="col-lg-6 bio">
                     <h2 class="section-title">Profile</h2>
@@ -220,36 +229,51 @@
                     <h2 class="section-title">Contact Me</h2>
                 </div>
             </div>
-            <div class="row form">
-                <div class="col-lg-3 offset-lg-3 col-md-5 offset-md-1 kiri">
-
-                    <div class="form-floating">
-                        <input type="Name" class="form-control" id="name" placeholder="Name">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="form-floating">
-                        <input type="email" class="form-control" id="email" placeholder="name@exemple.com">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="phone" placeholder="08........">
-                        <label for="phone">Phone Number</label>
-                    </div>
-
-                </div>
-                <div class="col-md-5 col-lg-3 kanan">
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a message here"
-                            id="floatingTextarea"></textarea>
-                        <label for="floatingTextarea">Message</label>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="alert alert-success my-alert d-none" role="alert">
+                        <strong>Thanks!</strong> Your message has alreadey sent.
                     </div>
                 </div>
             </div>
-            <div class="row form">
-                <div class="col-md-2 offset-md-5">
-                    <button class="btn btn-danger" type="submit">Send</button>
+            <form name="Fadhlan-contact-form">
+                <div class="row form">
+                    <div class="col-lg-3 offset-lg-3 col-md-5 offset-md-1 kiri">
+
+                        <div class="form-floating">
+                            <input type="Name" class="form-control" id="name" placeholder="Name" name="nama">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="email" placeholder="name@exemple.com"
+                                name="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="phone" placeholder="08........" name="no-hp">
+                            <label for="phone">Phone Number</label>
+                        </div>
+
+                    </div>
+                    <div class="col-md-5 col-lg-3 kanan">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea"
+                                name="pesan"></textarea>
+                            <label for="floatingTextarea">Message</label>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="row form">
+                    <div class="col-md-2 offset-md-5">
+                        <button class="btn btn-danger btn-kirim" type="submit">Send</button>
+
+                        <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Loading...
+                        </button>
+                    </div>
+                </div>
+            </form>
 
         </div>
     </div>
@@ -279,12 +303,50 @@
     <div class="copyright">
         <p>Copyright &copy; 2021 | FadhlanHarizMustaqim.All rights reserved</p>
     </div>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+    <!-- javascript for form to google sheet by jamie wilson -->
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbzKVaT29H9ltdwoy2Y1DC4IizlF0ceax_1IYQfhfpppH8acYEs6mZOogglZqFUDatNnnA/exec'
+        const form = document.forms['Fadhlan-contact-form'];
+        const btnKirim = document.querySelector('.btn-kirim');
+        const btnLoading = document.querySelector('.btn-loading');
+        const myAlert = document.querySelector('.my-alert');
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            // submit klik
+            // tampilkan loading, munculkan kirim
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    console.log('Success!', response);
+
+                    btnLoading.classList.toggle('d-none');
+                    btnKirim.classList.toggle('d-none');
+
+                    // alert
+                    myAlert.classList.toggle('d-none');
+
+                    setTimeout(function () {
+                        myAlert.classList.toggle('d-none');
+                    }, 5000);
+
+                    // reset form
+                    form.reset();
+
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
     </script>
 </body>
 
