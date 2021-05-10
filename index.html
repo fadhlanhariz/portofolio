@@ -5,6 +5,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Fadhlan Hariz Mustaqim">
+    <meta name="keywords" content="job-Seeker, front-end-developer-semarang, portofolio">
+    <meta name="description" content="portofolio website Developer | Fadhlan Hariz Mustaqim">
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet"
@@ -250,7 +253,7 @@
                             <label for="email">Email</label>
                         </div>
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="phone" placeholder="08........" name="no-hp">
+                            <input type="text" class="form-control" id="phone" name="no-hp">
                             <label for="phone">Phone Number</label>
                         </div>
 
@@ -308,46 +311,7 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
     </script>
     <!-- javascript for form to google sheet by jamie wilson -->
-    <script>
-        const scriptURL =
-            'https://script.google.com/macros/s/AKfycbzKVaT29H9ltdwoy2Y1DC4IizlF0ceax_1IYQfhfpppH8acYEs6mZOogglZqFUDatNnnA/exec'
-        const form = document.forms['Fadhlan-contact-form'];
-        const btnKirim = document.querySelector('.btn-kirim');
-        const btnLoading = document.querySelector('.btn-loading');
-        const myAlert = document.querySelector('.my-alert');
-
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            // submit klik
-            // tampilkan loading, munculkan kirim
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-
-            fetch(scriptURL, {
-                    method: 'POST',
-                    body: new FormData(form)
-                })
-                .then(response => {
-                    console.log('Success!', response);
-
-                    btnLoading.classList.toggle('d-none');
-                    btnKirim.classList.toggle('d-none');
-
-                    // alert
-                    myAlert.classList.toggle('d-none');
-
-                    setTimeout(function () {
-                        myAlert.classList.toggle('d-none');
-                    }, 5000);
-
-                    // reset form
-                    form.reset();
-
-                })
-                .catch(error => console.error('Error!', error.message));
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
