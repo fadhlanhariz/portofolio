@@ -187,3 +187,11 @@ footer a:hover {
 .copyright p {
     margin-bottom: 0px;
 }
+/* Gellery */
+.galleryPict {
+    width: 200px;
+}
+
+.galleryLInk:hover {
+    background-color: black;
+}
